@@ -1,18 +1,18 @@
-// ✏️ عدّل هنا بس:
-// بعد ما ترفع الـ APK في GitHub Releases، حط اسم حسابك واسم الريبو.
-// اسم الملف لازم يفضل ثابت (Revo.apk) عشان الرابط يفضل شغال مع كل إصدار جديد.
-const GITHUB_USER = "YOUR_USERNAME";
-const GITHUB_REPO = "YOUR_REPO";
-const APK_FILE = "Revo.apk";
+// رابط تنزيل الـ APK المباشر من GitHub Releases
+const DEFAULT_APK_URL =
+  "https://github.com/eebola458-max/revopage/releases/download/revo/revo.app.apk";
+
+export const REPO_URL = "https://github.com/eebola458-max/revopage";
+// للتواصل: بيستخدم صفحة Issues في الريبو. لو عايز تضيف إيميل، اكتبه هنا وهيظهر تلقائيًا.
+export const CONTACT_EMAIL = "";
 
 export const APP = {
   name: "Revo",
   tagline: "تشبهك في كل شيء",
   version: "1.12",
-  // رابط تنزيل مباشر لأحدث إصدار. ممكن تتخطاه بمتغير NEXT_PUBLIC_APK_URL في Vercel.
-  apkUrl:
-    process.env.NEXT_PUBLIC_APK_URL ??
-    `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/releases/latest/download/${APK_FILE}`,
+  updated: "18 أكتوبر 2026",
+  apkUrl: process.env.NEXT_PUBLIC_APK_URL ?? DEFAULT_APK_URL,
+  contactUrl: `${REPO_URL}/issues`,
 } as const;
 
 export type Screen = {
