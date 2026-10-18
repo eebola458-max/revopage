@@ -20,7 +20,11 @@ export function DownloadBand({ title = "نزّل Revo لأندرويد" }: { tit
         <h2 className="h2 h2--light">{title}</h2>
         <DownloadButton>تنزيل الـ APK</DownloadButton>
         <p className="fine fine--light">
-          الإصدار {APP.version}. لو ظهرت رسالة أمان وقت التثبيت، اسمح بالتثبيت من هذا المصدر من إعدادات الجهاز.
+          الإصدار {APP.version} · ملف APK
+        </p>
+        <p className="note">
+          لو ظهر تحذير «قد يكون هذا الملف ضارًا»، فده تحذير عام بيظهر مع أي تطبيق بيتنزّل خارج متجر جوجل بلاي.
+          اضغط «التنزيل على أي حال»، وبعدها اسمح بالتثبيت من الإعدادات.
         </p>
       </div>
     </section>

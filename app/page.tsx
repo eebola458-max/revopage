@@ -29,6 +29,9 @@ export default function Page() {
             <a className="ghost" href="#screens">شوف الشاشات</a>
           </div>
           <p className="fine">الإصدار {APP.version} · ملف APK</p>
+          <p className="note note--dark">
+            لو ظهر تحذير «قد يكون هذا الملف ضارًا» اضغط «التنزيل على أي حال». ده تحذير عام لأي تطبيق خارج جوجل بلاي.
+          </p>
           <ul className="hero-facts" aria-label="مميزات سريعة">
             <li>عربي بالكامل</li>
             <li>فاتح وداكن</li>

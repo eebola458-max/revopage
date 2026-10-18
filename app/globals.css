@@ -61,9 +61,10 @@ ul, dl { list-style: none; }
   padding-block: clamp(16px, 4vw, 48px) clamp(48px, 8vw, 96px);
 }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; margin-top: 32px; }
-.hero-facts { display: flex; flex-wrap: wrap; margin-top: 28px; color: var(--deep); font-weight: 600; font-size: 0.95rem; }
-.hero-facts li { padding-inline: 16px; border-inline-start: 2px solid var(--line); }
-.hero-facts li:first-child { padding-inline-start: 0; border-inline-start: 0; }
+.hero-facts { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 24px; color: var(--deep); font-weight: 600; font-size: 0.95rem; }
+.hero-facts li::before { content: "✓"; color: var(--brand); margin-inline-end: 8px; font-weight: 800; }
+.note { color: var(--muted); font-size: 0.9rem; line-height: 1.8; max-width: 46ch; margin-top: 10px; text-wrap: pretty; }
+.download .note { color: rgba(255, 255, 255, 0.82); margin-inline: auto; }
 
 .stage {
   --w: clamp(130px, 14vw, 205px);
